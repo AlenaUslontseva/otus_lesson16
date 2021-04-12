@@ -15,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.MainPage;
+import pages.PersonalAccountPage;
 
 import static drivers.DriverManager.getWebDriver;
 
@@ -22,6 +23,7 @@ import static drivers.DriverManager.getWebDriver;
 public class SampleTest {
     MainPage mainPage = new MainPage();
     private ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
+    //PersonalAccountPage personalAccountPage = new PersonalAccountPage();
 
     @Before()
     public void setupDriver() {
@@ -54,6 +56,7 @@ public class SampleTest {
     public void specifyEmail() { //specify-указать
         mainPage.findEmailField().sendKeys(cfg.emailNegativeTest());
     }
+
     @И("в поле password указан password незарегистрированного пользователя")
     public void specifyPasswordPositive() {  //specify-указать
         mainPage.findPasswordField().sendKeys(cfg.passwordNegativeTest());
@@ -70,8 +73,8 @@ public class SampleTest {
     }
 
     @И("нажата кнопка Войти")
-    public void clickButton() {
-        mainPage.pushTheButton().click();
+    public void clickButtonToComeIn() {
+        mainPage.pushTheButtonComeIn().click();
     }
 
     @Тогда("вышло сообщение об ошибке")
@@ -83,5 +86,6 @@ public class SampleTest {
     public void checkLogo() {
         Assert.assertNotNull("Лого пользователя найдено", mainPage.findLogo());
     }
+
 }
 

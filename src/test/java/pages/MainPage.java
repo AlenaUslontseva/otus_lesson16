@@ -12,7 +12,8 @@ public class MainPage {
     String registrationButtonLocator = "header2__auth-container";
     String emailFieldLocator = "//input[@type='text']";
     String passwordFieldLocator = "//input[@type='password']";
-    String buttonLocator = "div.new-input-line_last:nth-child(5) > button:nth-child(1)";
+    String buttonComeInLocator ="div.new-input-line_last:nth-child(5) > button:nth-child(1)";
+   //String buttonComeInLocator ="[class=\"new-log-reg__form js-login\"] [type=\"submit\"]";
     String errorMessage =   ".new-input-error.new-input-error_top.new-input-error_form.js-text";
     String logoLocator = "header2-menu__icon";
     // protected WebDriverWait wait;
@@ -29,8 +30,8 @@ public class MainPage {
         return getWebDriver().findElement(By.xpath(passwordFieldLocator));
     }
 
-    public WebElement pushTheButton() {
-        return getWebDriver().findElement(By.cssSelector(buttonLocator));
+    public WebElement pushTheButtonComeIn() {
+        return getWebDriver().findElement(By.cssSelector(buttonComeInLocator));
     }
 
     public WebElement isErrorLabelVisible() { //is Error Label Visible-видна ли ошибка

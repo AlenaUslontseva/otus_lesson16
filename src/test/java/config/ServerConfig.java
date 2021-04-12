@@ -19,4 +19,7 @@ public interface ServerConfig extends Config {
     @Key("passwordPositiveTest")
     String passwordPositiveTest();
 
+    @Key("urlAccount")
+    String urlAccount();
+
 }
