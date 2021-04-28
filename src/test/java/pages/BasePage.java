@@ -32,6 +32,4 @@ public class BasePage {
         actions.moveToElement(element).build().perform();
     }
 
-
-
 }

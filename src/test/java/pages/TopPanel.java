@@ -15,14 +15,15 @@ public class TopPanel extends BasePage { ;
         super(driver);
         authPopUp = new AuthPopUp(WebDriverFactory.getWebDriver());
     }
-
-    @FindBy(css = ".header2__right p")
+    //@FindBy(css = ".header2-menu__icon-img ic-blog-default-avatar")//новый
+    @FindBy(css = ".header2__right p")//старый
     private static WebElement userLogoName;
     @FindBy(css = "[title=\"Личный кабинет\"]")
     private static WebElement personalAccount;
 
-    public static void goToAccount() {
+
+    public void goToAccound() {
         moveToElement(userLogoName);
-        wait.until(ExpectedConditions.elementToBeClickable(personalAccount)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(personalAccount));
     }
 }

@@ -13,8 +13,8 @@ public class MainPage {
     String emailFieldLocator = "//input[@type='text']";
     String passwordFieldLocator = "//input[@type='password']";
     //String buttonComeInLocator ="div.new-input-line_last:nth-child(5) > button:nth-child(1)";
-   String buttonComeInLocator ="[class=\"new-log-reg__form js-login\"] [type=\"submit\"]";
-    String errorMessage =   ".new-input-error.new-input-error_top.new-input-error_form.js-text";
+    String buttonComeInLocator = "[class=\"new-log-reg__form js-login\"] [type=\"submit\"]";
+    String errorMessage = ".new-input-error.new-input-error_top.new-input-error_form.js-text";
     String logoLocator = "header2-menu__icon";
     // protected WebDriverWait wait;
 
@@ -35,7 +35,7 @@ public class MainPage {
     }
 
     public WebElement isErrorLabelVisible() { //is Error Label Visible-видна ли ошибка
-       return getWebDriver().findElement(By.cssSelector(errorMessage));
+        return getWebDriver().findElement(By.cssSelector(errorMessage));
     }
 
     public WebElement findLogo() {
