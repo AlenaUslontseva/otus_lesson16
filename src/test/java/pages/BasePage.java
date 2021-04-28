@@ -27,7 +27,7 @@ public class BasePage {
         wait = new WebDriverWait(driver, EXPLICIT_WAIT_TIME_OUT_TIME);//инициализация явного ожидания
     }
 
-    protected static void moveToElement(WebElement element) {
+    protected void moveToElement(WebElement element) {
         logger.info(String.format("Наводим курсор на элемент %s", element));
         actions.moveToElement(element).build().perform();
     }

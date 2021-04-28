@@ -13,7 +13,7 @@ public class TopPanelSteps {
 
     @И("пользователь переходит в личный кабинет")
     public void goToAccount() {
-        topPanel.goToAccound();
+        topPanel.goToAccount();
     }
 
 }

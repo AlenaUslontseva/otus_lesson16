@@ -17,12 +17,12 @@ public class TopPanel extends BasePage { ;
     }
     //@FindBy(css = ".header2-menu__icon-img ic-blog-default-avatar")//новый
     @FindBy(css = ".header2__right p")//старый
-    private static WebElement userLogoName;
+    private  WebElement userLogoName;
     @FindBy(css = "[title=\"Личный кабинет\"]")
-    private static WebElement personalAccount;
+    private  WebElement personalAccount;
 
 
-    public void goToAccound() {
+    public void goToAccount() {
         moveToElement(userLogoName);
         wait.until(ExpectedConditions.elementToBeClickable(personalAccount));
     }
