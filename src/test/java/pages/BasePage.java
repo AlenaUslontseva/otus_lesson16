@@ -18,7 +18,7 @@ public class BasePage {
     protected static WebDriverWait wait;//явное ожидание
     protected final static int EXPLICIT_WAIT_TIME_OUT_TIME = 5;//время явного ожидания в секундах
     // protected final ServerConfig cfg = ConfigFactory.create(ServerConfig.class);//Конфиг для доступа к значениям из файла конфигурации
-    protected static Actions actions;//для сложных действий
+    protected static Actions actions;
 
     public BasePage(WebDriver driver) {
         PageFactory.initElements(driver, this);

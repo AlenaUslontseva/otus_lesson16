@@ -11,6 +11,7 @@ public class TopPanelSteps {
     private TopPanel topPanel = new TopPanel(WebDriverFactory.getWebDriver());
     private ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
 
+
     @И("пользователь переходит в личный кабинет")
     public void goToAccount() {
         topPanel.goToAccount();
