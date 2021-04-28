@@ -1,4 +1,4 @@
-package steps;
+package step;
 
 import config.ServerConfig;
 import drivers.DriverManager;
@@ -35,7 +35,7 @@ public class SampleTest {
         DriverManager.quitDriver();
     }
 
-    @Пусть("выполнен вход на сайт {string}")
+    @Пусть("^выполнен вход на сайт \"([^\"]*)\"$")
     public void signIn(String url) {
         getWebDriver().navigate().to(url);
     }

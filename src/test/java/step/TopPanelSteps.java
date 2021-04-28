@@ -1,4 +1,4 @@
-package steps;
+package step;
 
 import config.ServerConfig;
 import drivers.WebDriverFactory;

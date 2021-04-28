@@ -1,11 +1,8 @@
 package pages;
 
-import io.cucumber.java.bg.И;
-import io.cucumber.java.ru.Тогда;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import steps.PersonalAccountSteps;
 
 
 public class PersonalAccountPage extends BasePage {
