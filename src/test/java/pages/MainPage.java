@@ -12,11 +12,9 @@ public class MainPage {
     String registrationButtonLocator = "header2__auth-container";
     String emailFieldLocator = "//input[@type='text']";
     String passwordFieldLocator = "//input[@type='password']";
-    //String buttonComeInLocator ="div.new-input-line_last:nth-child(5) > button:nth-child(1)";
     String buttonComeInLocator = "[class=\"new-log-reg__form js-login\"] [type=\"submit\"]";
     String errorMessage = ".new-input-error.new-input-error_top.new-input-error_form.js-text";
     String logoLocator = "header2-menu__icon";
-    // protected WebDriverWait wait;
 
     public WebElement getRegistrationButton() {
         return getWebDriver().findElement(By.className(registrationButtonLocator));

@@ -10,12 +10,7 @@ import io.cucumber.java.ru.Пусть;
 import io.cucumber.java.ru.Тогда;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.MainPage;
-import pages.PersonalAccountPage;
 
 import static drivers.DriverManager.getWebDriver;
 
