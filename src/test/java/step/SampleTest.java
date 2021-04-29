@@ -18,7 +18,6 @@ import static drivers.DriverManager.getWebDriver;
 public class SampleTest {
     MainPage mainPage = new MainPage();
     private ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
-    //PersonalAccountPage personalAccountPage = new PersonalAccountPage();
 
     @Before()
     public void setupDriver() {
