@@ -19,11 +19,11 @@ public class MainPage {
     String logoLocator = "header2-menu__icon";
 
     public WebElement getRegistrationButton() {
-        return getWebDriver().findElement(By.className(registrationButtonLocator));
+        return getWebDriver().findElement(By.cssSelector(registrationButtonLocator));
     }
 
     public WebElement findEmailField() { //Field-поле
-        return getWebDriver().findElement(By.xpath(emailFieldLocator));
+        return getWebDriver().findElement(By.cssSelector(emailFieldLocator));
     }
 
     public WebElement findPasswordField() {
