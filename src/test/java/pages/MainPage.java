@@ -10,8 +10,10 @@ import static drivers.DriverManager.getWebDriver;
 
 public class MainPage {
     String registrationButtonLocator = "header2__auth-container";
-    String emailFieldLocator = "//input[@type='text']";
-    String passwordFieldLocator = "//input[@type='password']";
+    //String emailFieldLocator = "//input[@type='text']"; //старый
+    String emailFieldLocator = "[class=\"new-log-reg__form js-login\"] [name=\"email\"]";   //новый
+    //String passwordFieldLocator = "//input[@type='password']";//старый
+    String passwordFieldLocator = "[type=\"password\"]";//новый
     String buttonComeInLocator = "[class=\"new-log-reg__form js-login\"] [type=\"submit\"]";
     String errorMessage = ".new-input-error.new-input-error_top.new-input-error_form.js-text";
     String logoLocator = "header2-menu__icon";
